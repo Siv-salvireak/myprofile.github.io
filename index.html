@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+       initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link
+    rel="icon"
+    href=
+"web logo.png"
+    type="image/x-icon"
+/>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- navbar design -->
+      <nav class=" flex md:flex md:flex-grow flex-row justify-end space-x-5 pt-5 pr-10  text-md font-semibold text-gray-600">
+        <a href="index.html" class="text-purple-600 underline border-purple-600">Home</a>
+        <a href="about.html" class="hover:text-purple-600">About</a>
+        <a href="design.html" class="hover:text-purple-600">Project</a>
+        <a href="contact.html" class="hover:text-purple-600">Contact</a>
+      </nav>
+<!-- end of navbar design -->
+    </header>
+    <!-- main container design -->
+    <div class="w-full h-full">
+        <div class="mt-10 flex flex-col md:flex-row xl:flex-row">
+            <!-- Left class -->
+            <div class="flex flex-col ml-10 mt-32">
+                    <p class="h-12 w-80 bg-purple-600 text-white pt-2 text-center">Hii , My name is Siv salvireak</p>  
+                    <p class="text-purple-600 text-7xl font-bold pt-5">Graphic</p>
+                    <p class="text-gray-500 text-7xl font-bold stroke-gray-800 text-stroke-3 animate-pulse">& Web Designer</p>
+                    <p class="pt-5">PhnomPenh, Cambodia</p>
+                        <div class="flex flex-row mt-5">
+                            <div class="rounded-l-md h-10 border-2 w-40 text-center pt-2 text-sm">MORE ABOUT ME</div>
+                            <RouterLink to="/about">
+                            <button  href="about.html" type="submit" class="text-white bg-purple-600 h-10 w-12 rounded-r-md text-2xl font-bold pb-1">>
+                            </button>
+                            </RouterLink>
+                        </div>
+                    </div>
+            <!-- end of left class -->
+            <!-- right class -->
+             <div class="ml-10 mt-10 sm:mt-32 md:mt-32 xl:mt-32 flex md:flex md:flex-grow flex-row sm:justify-end md:justify-end xl:justify-end xl:mr-10">
+                <img src="./img/cat.png" alt="cat" class="absolute w-96 z-50 right-20 xl:right-0 md:right-0 sm:right-0 v-motion-roll-visible-once-left"/>
+                <div class="bg-white h-96 w-60 border border-gray-200 rounded-tl-3xl rounded-br-3xl absolute mr-2"></div>
+                <div class="bg-purple-600 h-96 w-60 rounded-tl-3xl rounded-br-3xl mt-2"></div>
+             </div>
+             <!-- end of right class -->
+        </div>
+    </div>
+     <!-- end main container design -->
+</body>
+<footer class="bg-white w-full h-12">
+
+</footer>
+
+</html>
+<style >
+    * {
+      transition: 0.5s;
+    }
+    nav a.router-link-exact-active {
+      color: #1f2937;
+      text-decoration: underline;
+      text-decoration-color: #9333EA;
+    }
+    nav a.router-link-exact-active:hover {
+      color: #9333EA;
+    }
+    </style>
+    
